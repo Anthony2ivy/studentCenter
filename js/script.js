@@ -1,22 +1,22 @@
 /*这是总的js 存放处*/
 // footer
-//getStudentTokenUrl="/studentToken";
-//refreshStudentTokenurl="/refreshStudentToken";
-//var studentToken="";
-//var stuId="";
-////$.getJson(getStudentTokenUrl,function(data,status){
-////	studentToken=
-////});
-//$.getJSON(getStudentTokenUrl,function(result){
-//  if(result.status!=200)
-//  {
-//      alert(result.error);
-//  }else{
-//      studentToken=result.studentToken;
-//      stuId=result.stuId;
-//      // alert(studentToken+" "+stuId);
-//  }
+getStudentTokenUrl="/studentToken";
+refreshStudentTokenurl="/refreshStudentToken";
+var studentToken="";
+var stuId="";
+//$.getJson(getStudentTokenUrl,function(data,status){
+//	studentToken=
 //});
+$.getJSON(getStudentTokenUrl,function(result){
+    if(result.status!=200)
+    {
+        alert(result.error);
+    }else{
+        studentToken=result.studentToken;
+        stuId=result.stuId;
+        // alert(studentToken+" "+stuId);
+    }
+});
 
 
 
